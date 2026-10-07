@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>October Event | 4 Clarke Cardiac</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        html, body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            overflow-x: hidden;
+            width: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Fall-themed Apple-style typography gradients */
+        .apple-gradient-light {
+            background: linear-gradient(135deg, #7c2d12 0%, #c2410c 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .apple-gradient-dark {
+            background: linear-gradient(135deg, #ffedd5 0%, #f97316 50%, #9a3412 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Custom Badges */
+        .pro-badge {
+            border: 1px solid #86868b;
+            color: #86868b;
+            border-radius: 9999px;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: inline-block;
+        }
+
+        .pro-badge-dark {
+            border: 1px solid #a1a1a6;
+            color: #a1a1a6;
+            border-radius: 9999px;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: inline-block;
+        }
+
+        /* Scroll Reveal Animations (Blur & Scale) */
+        .reveal {
+            opacity: 0;
+            transform: translateY(60px) scale(0.97);
+            filter: blur(12px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity, filter;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            filter: blur(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+        .reveal-delay-5 { transition-delay: 0.5s; }
+        .reveal-delay-6 { transition-delay: 0.7s; }
+
+        .scale-reveal {
+            opacity: 0;
+            transform: scale(0.85) translateY(40px);
+            filter: blur(12px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity, filter;
+        }
+
+        .scale-reveal.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+            filter: blur(0);
+        }
+
+        /* Section Layouts */
+        .section-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 6rem 1.5rem;
+        }
+        
+        .content-width {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        /* Fallback for strict security/JS blocked environments */
+        noscript .reveal, noscript .scale-reveal {
+            opacity: 1 !important;
+            transform: none !important;
+            filter: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="section-container items-center text-center relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[800px] h-[400px] bg-orange-600 rounded-full blur-[180px] opacity-20 pointer-events-none z-0"></div>
+        <div class="relative inline-flex flex-col items-center mb-8 reveal reveal-delay-1 hero-trigger z-10">
+            <!-- Fall Leaf Logo with Fall Gradient -->
+            <i class="fa-solid fa-leaf text-8xl md:text-[140px] apple-gradient-dark mb-4 transform -rotate-12 z-0"></i>
+        </div>
+        <h1 class="text-7xl md:text-[140px] font-black tracking-tighter apple-gradient-dark leading-none reveal reveal-delay-2 hero-trigger">
+            Welcome.
+        </h1>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="section-container items-center text-center">
+        <div class="reveal">
+            <div class="pro-badge-dark mb-8">4 Clarke '27</div>
+            <h1 class="text-6xl md:text-8xl font-bold tracking-tighter apple-gradient-dark mb-6">
+                October Event.
+            </h1>
+            <p class="text-3xl md:text-5xl font-medium text-[#a1a1a6] tracking-tight">
+                A new fiscal year. A new ecosystem.
+            </p>
+        </div>
+    </section>
+
+    <!-- Talent Section -->
+    <section class="section-container bg-[#000000] text-white">
+        <div class="content-width">
+            <div class="pro-badge-dark border-white/30 text-white/50 mb-6 reveal">Talent Acquisition</div>
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter apple-gradient-dark mb-16 reveal">
+                Expanding the ecosystem.
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="reveal reveal-delay-1">
+                    <p class="text-xl font-bold text-white mb-4 border-b border-white/20 pb-2">Nurse Intern</p>
+                    <p class="text-[#a1a1a6] text-lg mb-2">Sandra Aponte</p>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <p class="text-xl font-bold text-white mb-4 border-b border-white/20 pb-2">Nurse Residents</p>
+                    <p class="text-[#a1a1a6] text-lg mb-2">Jasmine Dalley</p>
+                    <p class="text-[#a1a1a6] text-lg mb-2">Sophia Galvez</p>
+                    <p class="text-[#a1a1a6] text-lg mb-2">Mya Anderson</p>
+                </div>
+                <div class="reveal reveal-delay-3">
+                    <p class="text-xl font-bold text-white mb-4 border-b border-white/20 pb-2">Tele RNs</p>
+                    <p class="text-[#a1a1a6] text-lg mb-2">Victoria Petr</p>
+                </div>
+                <div class="reveal reveal-delay-4">
+                    <p class="text-xl font-bold text-white mb-4 border-b border-white/20 pb-2">Clinical Partners</p>
+                    <p class="text-[#a1a1a6] text-lg mb-2">Murcy Lanysse</p>
+                    <p class="text-[#a1a1a6] text-lg mb-2">Daniella Ramirez</p>
+                </div>
+            </div>
+            <p class="text-2xl font-medium text-[#a1a1a6] tracking-tight reveal">
+                We are actively integrating <span class="text-white font-bold">11 new RNs</span> into the 4 Clarke architecture this season.
+            </p>
+        </div>
+    </section>
+
+    <!-- Birthdays Section -->
+    <section class="section-container bg-[#1d1d1f] text-center items-center">
+        <div class="content-width">
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter apple-gradient-dark mb-16 reveal">
+                October Birthdays.
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-left max-w-4xl mx-auto mb-16 reveal reveal-delay-1">
+                <div>
+                    <p class="text-xl font-bold text-[#f5f5f7]">Ana Larrenchea Castro</p>
+                    <p class="text-[#86868b]">10/7</p>
+                </div>
+                <div>
+                    <p class="text-xl font-bold text-[#f5f5f7]">Carol Rayo</p>
+                    <p class="text-[#86868b]">10/8</p>
+                </div>
+                <div>
+                    <p class="text-xl font-bold text-[#f5f5f7]">Damian Hernandez</p>
+                    <p class="text-[#86868b]">10/12</p>
+                </div>
+                <div>
+                    <p class="text-xl font-bold text-[#f5f5f7]">Thamare Durelien</p>
+                    <p class="text-[#86868b]">10/13</p>
+                </div>
+                <div>
+                    <p class="text-xl font-bold text-[#f5f5f7]">Jaqueline Saenz Zambrana</p>
+                    <p class="text-[#86868b]">10/21</p>
+                </div>
+                <div>
+                    <p class="text-xl font-bold text-[#f5f5f7]">Yeleine Pichardo</p>
+                    <p class="text-[#86868b]">10/23</p>
+                </div>
+                <div>
+                    <p class="text-xl font-bold text-[#f5f5f7]">Melanie Ramirez</p>
+                    <p class="text-[#86868b]">10/25</p>
+                </div>
+            </div>
+            <p class="text-lg font-medium text-[#86868b] reveal reveal-delay-2 italic">
+                *If it's your birthday and we missed it, please let us know! We have a lot of new staff and want to make sure we celebrate everyone.
+            </p>
+        </div>
+    </section>
+
+    <!-- Employee of the Month -->
+    <section class="bg-[#f5f5f7] text-[#1d1d1f] text-center w-full">
+        <!-- Part 1: The Build Up -->
+        <div class="section-container min-h-[90vh] items-center justify-center content-width">
+            <div class="pro-badge mb-6 reveal">Pro Performance</div>
+            <p class="text-4xl md:text-6xl font-bold text-[#86868b] mb-20 reveal reveal-delay-1">Employee of the Month</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-left w-full">
+                <div class="bg-white rounded-3xl p-10 scale-reveal reveal-delay-2 shadow-sm border border-orange-100 flex flex-col items-start">
+                    <i class="fa-solid fa-people-group text-4xl text-orange-500 mb-6"></i>
+                    <p class="text-2xl font-bold mb-3">Exceptional Teamwork</p>
+                    <p class="text-[#86868b] text-lg leading-relaxed">Stepped up in SD and consistently helped the team pass meds when they were falling behind.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-10 scale-reveal reveal-delay-3 shadow-sm border border-orange-100 flex flex-col items-start">
+                    <i class="fa-solid fa-heart-pulse text-4xl text-red-500 mb-6"></i>
+                    <p class="text-2xl font-bold mb-3">Code Rescue</p>
+                    <p class="text-[#86868b] text-lg leading-relaxed">Provided crucial, immediate support during a code rescue that ultimately evolved into a code blue.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-10 scale-reveal reveal-delay-4 shadow-sm border border-orange-100 flex flex-col items-start">
+                    <i class="fa-solid fa-shield-halved text-4xl text-amber-500 mb-6"></i>
+                    <p class="text-2xl font-bold mb-3">Total Reliability</p>
+                    <p class="text-[#86868b] text-lg leading-relaxed">A true safety net for the unit, always prioritizing patient safety and colleague support.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Part 2: The Dramatic Reveal -->
+        <div class="section-container min-h-[100vh] items-center justify-center content-width relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-orange-50/50 pointer-events-none z-0"></div>
+            <div class="z-10 reveal">
+                <p class="text-xl font-bold text-[#86868b] uppercase tracking-widest mb-8">And the winner is</p>
+                <h2 class="text-6xl md:text-[110px] font-black tracking-tighter apple-gradient-light mb-4 leading-none px-4">
+                    Francisco Portocarrero
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audits & Diagnostics -->
+    <section class="section-container bg-white text-[#1d1d1f]">
+        <div class="content-width">
+            <div class="pro-badge mb-6 reveal">System Diagnostics</div>
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-[#1d1d1f] mb-16 reveal">
+                Opportunities & Outcomes.
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <!-- IP Audits -->
+                <div class="reveal reveal-delay-1 flex flex-col h-full">
+                    <h3 class="text-3xl font-bold mb-10 border-b-2 border-[#1d1d1f] pb-4">DNV & Infection Prevention</h3>
+                    
+                    <!-- Dynamic Linear Progress Bars -->
+                    <div class="space-y-8 mb-12">
+                        <!-- Pain Reassessment -->
+                        <div class="relative">
+                            <div class="flex justify-between items-end mb-2">
+                                <div>
+                                    <span class="block text-xl font-bold text-[#1d1d1f]">Pain Reassessment</span>
+                                    <span class="block text-sm font-medium text-[#86868b] tracking-wide">TARGET: 90%</span>
+                                </div>
+                                <span class="text-4xl font-black apple-gradient-light counter tracking-tighter" data-target="83" data-suffix="%">0%</span>
+                            </div>
+                            <div class="w-full bg-[#f5f5f7] rounded-full h-4 overflow-hidden shadow-[inset_0_2px_4px_rgba(0,0,0,0.06)]">
+                                <div class="h-full rounded-full bg-gradient-to-r from-amber-400 to-orange-500 progress-bar shadow-md" data-width="83%" style="width: 0%; transition: width 2s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                            </div>
+                        </div>
+
+                        <!-- DW & Neuro -->
+                        <div class="relative">
+                            <div class="flex justify-between items-end mb-2">
+                                <div>
+                                    <span class="block text-xl font-bold text-[#1d1d1f]">DW & Neuro Checks</span>
+                                    <span class="block text-sm font-medium text-[#86868b] tracking-wide">TARGET: 90%</span>
+                                </div>
+                                <span class="text-4xl font-black text-red-500 counter tracking-tighter" data-target="66" data-suffix="%">0%</span>
+                            </div>
+                            <div class="w-full bg-[#f5f5f7] rounded-full h-4 overflow-hidden shadow-[inset_0_2px_4px_rgba(0,0,0,0.06)]">
+                                <div class="h-full rounded-full bg-gradient-to-r from-red-400 to-red-600 progress-bar shadow-md" data-width="66%" style="width: 0%; transition: width 2s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;"></div>
+                            </div>
+                        </div>
+
+                        <!-- IPOCs -->
+                        <div class="relative">
+                            <div class="flex justify-between items-end mb-2">
+                                <div>
+                                    <span class="block text-xl font-bold text-[#1d1d1f]">IPOCs</span>
+                                    <span class="block text-sm font-medium text-[#86868b] tracking-wide">TARGET: 90%</span>
+                                </div>
+                                <span class="text-4xl font-black apple-gradient-light counter tracking-tighter" data-target="72" data-suffix="%">0%</span>
+                            </div>
+                            <div class="w-full bg-[#f5f5f7] rounded-full h-4 overflow-hidden shadow-[inset_0_2px_4px_rgba(0,0,0,0.06)]">
+                                <div class="h-full rounded-full bg-gradient-to-r from-amber-400 to-orange-500 progress-bar shadow-md" data-width="72%" style="width: 0%; transition: width 2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apple Fitness Style Rings for Oral Care -->
+                    <div class="mt-auto bg-[#f5f5f7] rounded-[32px] p-8 border border-gray-100 shadow-sm flex flex-col items-center">
+                        <p class="text-2xl font-bold mb-8 text-[#1d1d1f]">Oral Care Deep Dive</p>
+                        
+                        <div class="relative w-48 h-48 flex items-center justify-center mx-auto">
+                            <!-- Outer Ring (Supply 82%) -->
+                            <svg class="transform -rotate-90 absolute w-48 h-48">
+                                <circle cx="96" cy="96" r="84" stroke="#e5e5ea" stroke-width="16" fill="transparent" />
+                                <circle class="progress-ring-circle" cx="96" cy="96" r="84" stroke="url(#green-gradient)" stroke-width="16" fill="transparent" stroke-dasharray="527.78" stroke-dashoffset="527.78" stroke-linecap="round" data-offset="95" style="transition: stroke-dashoffset 2.5s cubic-bezier(0.16, 1, 0.3, 1);" />
+                                <defs>
+                                    <linearGradient id="green-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#34c759" />
+                                        <stop offset="100%" stop-color="#28cd41" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            
+                            <!-- Inner Ring (Performed 50%) -->
+                            <svg class="transform -rotate-90 absolute w-32 h-32">
+                                <circle cx="64" cy="64" r="52" stroke="#e5e5ea" stroke-width="16" fill="transparent" />
+                                <circle class="progress-ring-circle" cx="64" cy="64" r="52" stroke="url(#red-gradient)" stroke-width="16" fill="transparent" stroke-dasharray="326.72" stroke-dashoffset="326.72" stroke-linecap="round" data-offset="163.36" style="transition: stroke-dashoffset 2.5s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;" />
+                                <defs>
+                                    <linearGradient id="red-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#ff3b30" />
+                                        <stop offset="100%" stop-color="#ff453a" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            
+                            <div class="absolute flex flex-col items-center justify-center text-center">
+                                <i class="fa-solid fa-tooth text-3xl text-[#1d1d1f]"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Ring Legends -->
+                        <div class="flex justify-center gap-12 mt-8 w-full">
+                            <div class="text-center">
+                                <span class="text-3xl font-black text-[#34c759] counter block" data-target="82" data-suffix="%">0%</span>
+                                <span class="text-xs font-bold text-[#86868b] uppercase tracking-widest">Supply Ready</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="text-3xl font-black text-[#ff3b30] counter block" data-target="50" data-suffix="%">0%</span>
+                                <span class="text-xs font-bold text-[#86868b] uppercase tracking-widest">Performed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outcomes -->
+                <div class="reveal reveal-delay-2 flex flex-col h-full">
+                    <h3 class="text-3xl font-bold mb-10 border-b-2 border-[#1d1d1f] pb-4">Fiscal Year Metrics</h3>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="bg-[#f5f5f7] p-8 rounded-[32px] border border-gray-100 flex flex-col items-center justify-center relative overflow-hidden group shadow-sm transition-all duration-300 hover:shadow-md">
+                            <div class="absolute inset-0 bg-gradient-to-br from-orange-100/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <p class="text-7xl font-black text-[#1d1d1f] mb-2 counter relative z-10" data-target="1" data-suffix="">0</p>
+                            <p class="text-sm font-bold text-[#86868b] uppercase tracking-widest relative z-10">Fall YTD</p>
+                        </div>
+                        <div class="bg-[#fff0f0] p-8 rounded-[32px] border border-red-100 flex flex-col items-center justify-center relative overflow-hidden group shadow-sm transition-all duration-300 hover:shadow-md hover:border-red-200">
+                            <div class="absolute inset-0 bg-gradient-to-br from-red-100/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <p class="text-7xl font-black text-[#ff3b30] mb-2 counter relative z-10" data-target="2" data-suffix="">0</p>
+                            <p class="text-sm font-bold text-[#ff3b30]/80 uppercase tracking-widest relative z-10">HAPIs YTD</p>
+                        </div>
+                    </div>
+                    <div class="bg-red-50 text-red-900 p-8 rounded-[32px] border border-red-200/60 shadow-sm mt-auto">
+                        <p class="font-bold mb-3 text-lg flex items-center"><i class="fa-solid fa-triangle-exclamation mr-3 text-red-500 text-xl"></i>HAPI Alert (Reported 10/6)</p>
+                        <p class="text-base opacity-90 leading-relaxed">Patient presented with denuded, highly compromised skin that unfortunately evolved into a DTI. <strong>We can do better.</strong> Vigilant assessment and prevention are critical.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Magnet/DNV Focus -->
+            <div class="mt-16 bg-[#f5f5f7] rounded-3xl p-10 reveal reveal-delay-3 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Magnet & DNV Visit Incoming</h3>
+                    <p class="text-lg text-[#86868b] max-w-2xl">Focus areas: Environment of care, unit operational workflows, patient safety protocols, and Magnet projects. Review the Magnet Board and see Paola & Jess's new flyer for details.</p>
+                </div>
+                <i class="fa-solid fa-clipboard-check text-6xl text-[#1d1d1f]"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsiveness Section -->
+    <section class="section-container bg-[#f5f5f7] text-[#1d1d1f]">
+        <div class="content-width">
+            <div class="pro-badge mb-6 reveal">HCAHPS Focus</div>
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-[#1d1d1f] mb-8 reveal">
+                Staff Responsiveness.
+            </h2>
+            <p class="text-2xl font-medium text-[#86868b] mb-16 max-w-4xl reveal reveal-delay-1 italic">
+                "We get there fast, but when we don't pick up the phone, that's what they remember."
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-8 scale-reveal reveal-delay-2 shadow-sm border border-orange-200">
+                    <i class="fa-solid fa-phone-volume text-3xl text-orange-500 mb-6"></i>
+                    <p class="text-xl font-bold mb-4">Phone Handoffs</p>
+                    <p class="text-[#86868b]">Strict RN to RN and CP to CP phone handoffs are required to ensure no call ever goes unanswered.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 scale-reveal reveal-delay-3 shadow-sm border border-orange-200">
+                    <i class="fa-solid fa-life-ring text-3xl text-amber-500 mb-6"></i>
+                    <p class="text-xl font-bold mb-4">The AP Safety Net</p>
+                    <p class="text-[#86868b]">APs act as the ultimate safety net for any call ringing longer than 1 minute.</p>
+                </div>
+                <div class="bg-[#1d1d1f] text-white rounded-3xl p-8 scale-reveal reveal-delay-4 shadow-sm border border-orange-900/50">
+                    <i class="fa-solid fa-users text-3xl text-orange-400 mb-6"></i>
+                    <p class="text-xl font-bold mb-4">Total Ownership</p>
+                    <p class="text-[#a1a1a6]">Everyone is involved. From the frontline staff all the way up to the Manager. We own the response time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software & OS Section -->
+    <section class="section-container bg-white text-[#1d1d1f]">
+        <div class="content-width">
+            <div class="pro-badge mb-6 reveal">Ecosystem Upgrades</div>
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-[#1d1d1f] mb-16 reveal">
+                Epic & HelloCare.
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <!-- Epic -->
+                <div class="bg-[#f5f5f7] rounded-[32px] p-12 flex flex-col justify-center h-full scale-reveal reveal-delay-1 border border-[#d2d2d7]">
+                    <i class="fa-solid fa-mobile-screen-button text-5xl text-[#1d1d1f] mb-6"></i>
+                    <p class="text-3xl font-bold text-[#1d1d1f] mb-4">Epic + Rover</p>
+                    <ul class="text-lg text-[#86868b] font-medium space-y-4">
+                        <li><i class="fa-solid fa-check text-[#1d1d1f] mr-2"></i>Full mobile documentation via iPhone.</li>
+                        <li><i class="fa-solid fa-check text-[#1d1d1f] mr-2"></i>Potential ambient documentation capabilities.</li>
+                        <li><i class="fa-solid fa-check text-[#1d1d1f] mr-2"></i>Super User mobilization starts now.</li>
+                    </ul>
+                </div>
+                <!-- HelloCare -->
+                <div class="bg-[#f5f5f7] rounded-[32px] p-12 flex flex-col justify-center h-full scale-reveal reveal-delay-2 border border-[#d2d2d7]">
+                    <i class="fa-solid fa-desktop text-5xl text-[#1d1d1f] mb-6"></i>
+                    <p class="text-3xl font-bold text-[#1d1d1f] mb-4">HelloCare Smart Screens</p>
+                    <ul class="text-lg text-[#86868b] font-medium space-y-4">
+                        <li><i class="fa-solid fa-check text-[#1d1d1f] mr-2"></i><strong>In-Room:</strong> Replaces whiteboards. Allows on-the-spot Daily Weights and I/O documentation.</li>
+                        <li><i class="fa-solid fa-check text-[#1d1d1f] mr-2"></i><strong>Hallway:</strong> Replaces magnets, isolation signs, mobility tools, and BMAT displays.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-[#1d1d1f] rounded-3xl p-10 text-white flex items-center justify-between reveal reveal-delay-3 border border-orange-900/30">
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Ivenix Smart Pumps</h3>
+                    <p class="text-[#a1a1a6]">Rollout preparation continues for our next-generation pump architecture.</p>
+                </div>
+                <i class="fa-solid fa-droplet text-4xl text-amber-500"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLINT Survey Section -->
+    <section class="section-container bg-[#000000] text-center items-center relative overflow-hidden">
+        <div class="absolute inset-0 flex justify-center items-center opacity-20 pointer-events-none z-0">
+            <div class="w-[600px] h-[600px] bg-orange-600 rounded-full blur-[150px]"></div>
+        </div>
+        
+        <div class="z-10 content-width">
+            <div class="reveal">
+                <div class="pro-badge-dark border-white/30 text-white/50 mb-8">Your Voice</div>
+                <h2 class="text-6xl md:text-8xl font-bold tracking-tighter apple-gradient-dark mb-8 leading-tight">
+                    The GLINT Survey.
+                </h2>
+                <p class="text-2xl md:text-4xl font-medium text-[#a1a1a6] tracking-tight max-w-3xl mx-auto mb-12">
+                    We want to hear from everyone. New staff, tenured staff, everyone.
+                </p>
+                
+                <div class="inline-block bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 scale-reveal reveal-delay-1">
+                    <i class="fa-solid fa-ticket text-5xl text-yellow-500 mb-4 drop-shadow-lg"></i>
+                    <p class="text-2xl font-bold text-white mb-2">Completion = Raffle Entry</p>
+                    <p class="text-[#a1a1a6]">Complete your survey to enter the unit raffle!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finale Section -->
+    <section class="section-container bg-white text-center items-center">
+        <div class="content-width">
+            <h2 class="text-7xl md:text-[120px] font-black tracking-tighter apple-gradient-light mb-8 leading-none reveal">
+                Let's build.
+            </h2>
+            <p class="text-2xl md:text-3xl font-medium text-[#86868b] reveal reveal-delay-1">
+                Welcome to the new fiscal year.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Use a safe wrapper to prevent any JS errors from breaking the page
+        document.addEventListener("DOMContentLoaded", () => {
+            try {
+                // 1. Initial Hero Animations
+                setTimeout(() => {
+                    document.querySelectorAll('.hero-trigger').forEach(el => el.classList.add('active'));
+                }, 100);
+
+                // 2. High-Performance Number Sprinter Engine
+                const animateValue = (el) => {
+                    const target = parseInt(el.getAttribute('data-target')) || 0;
+                    const suffix = el.getAttribute('data-suffix') || '';
+                    const duration = 2000;
+                    let startTimestamp = null;
+                    
+                    const step = (timestamp) => {
+                        if (!startTimestamp) startTimestamp = timestamp;
+                        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                        // Apple-style ease-out curve
+                        const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+                        el.innerText = Math.floor(easeProgress * target) + suffix;
+                        if (progress < 1) {
+                            window.requestAnimationFrame(step);
+                        }
+                    };
+                    window.requestAnimationFrame(step);
+                };
+
+                // 3. Scroll Reveal & Graphic Animation Observer (Two-Way, Edge Compatible)
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px 0px -10% 0px', // Triggers slightly before element comes fully into view
+                    threshold: 0.1 // 10% visible threshold is very safe for Edge
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Fade & scale section in
+                            entry.target.classList.add('active');
+
+                            // Trigger Number Counters
+                            const counters = entry.target.querySelectorAll('.counter:not(.counted)');
+                            counters.forEach(c => {
+                                c.classList.add('counted');
+                                animateValue(c);
+                            });
+
+                            // Trigger Linear Progress Bars
+                            const bars = entry.target.querySelectorAll('.progress-bar:not(.filled)');
+                            bars.forEach(b => {
+                                b.classList.add('filled');
+                                b.style.width = b.getAttribute('data-width');
+                            });
+
+                            // Trigger Circular Progress Rings
+                            const rings = entry.target.querySelectorAll('.progress-ring-circle:not(.filled)');
+                            rings.forEach(r => {
+                                r.classList.add('filled');
+                                r.style.strokeDashoffset = r.getAttribute('data-offset');
+                            });
+                            
+                        } else {
+                            // RESET EVERYTHING when scrolling out of view (upwards or downwards)
+                            entry.target.classList.remove('active');
+
+                            // Reset Counters
+                            const counters = entry.target.querySelectorAll('.counter.counted');
+                            counters.forEach(c => {
+                                c.classList.remove('counted');
+                                c.innerText = '0' + (c.getAttribute('data-suffix') || '');
+                            });
+
+                            // Reset Linear Bars
+                            const bars = entry.target.querySelectorAll('.progress-bar.filled');
+                            bars.forEach(b => {
+                                b.classList.remove('filled');
+                                b.style.width = '0%';
+                            });
+
+                            // Reset Rings
+                            const rings = entry.target.querySelectorAll('.progress-ring-circle.filled');
+                            rings.forEach(r => {
+                                r.classList.remove('filled');
+                                const dasharray = r.getAttribute('stroke-dasharray');
+                                if (dasharray) {
+                                    r.style.strokeDashoffset = dasharray;
+                                }
+                            });
+                        }
+                    });
+                }, observerOptions);
+
+                // Select all elements that need to reveal
+                const revealElements = document.querySelectorAll('.reveal, .scale-reveal');
+                revealElements.forEach(el => {
+                    // Skip hero elements as they animate on load
+                    if (!el.classList.contains('hero-trigger')) {
+                        observer.observe(el);
+                    }
+                });
+
+            } catch (error) {
+                // FALLBACK: If strict browser security blocks JS execution, force everything to be visible.
+                console.warn("Animation script blocked or failed. Using fallback.", error);
+                document.querySelectorAll('.reveal, .scale-reveal').forEach(el => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'none';
+                    el.style.filter = 'none';
+                });
+            }
+        });
+    </script>
+    
+    <!-- Fallback for users with JS fully disabled -->
+    <noscript>
+        <style>
+            .reveal, .scale-reveal { opacity: 1 !important; transform: none !important; filter: none !important; }
+        </style>
+    </noscript>
+</body>
+</html>
